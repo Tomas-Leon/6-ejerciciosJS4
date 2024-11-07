@@ -12,13 +12,9 @@ class Avion {
     if (this.listaPasajeros.length < this.capacidad) {
       this.listaPasajeros.push(pasajero);
       document.write(`${pasajero} ha subido al avión ${this.nombre}.<br>`);
-      console.log(`${pasajero} ha subido al avión ${this.nombre}.`);
     } else {
       document.write(
         `El avión ${this.nombre} está lleno. No hay espacio para ${pasajero}.<br>`
-      );
-      console.log(
-        `El avión ${this.nombre} está lleno. No hay espacio para ${pasajero}.`
       );
     }
   }
@@ -42,9 +38,6 @@ class Aeropuerto {
     document.write(
       `El avión ${avion.nombre} ha sido agregado al aeropuerto ${this.nombreAeropuerto}.<br>`
     );
-    console.log(
-      `El avión ${avion.nombre} ha sido agregado al aeropuerto ${this.nombreAeropuerto}.`
-    );
   }
 
   // Método para buscar un avión por su nombre
@@ -54,13 +47,11 @@ class Aeropuerto {
     );
     if (avionEncontrado) {
       document.write(`${avionEncontrado.mostrarInformacion()}<br>`);
-      console.log(avionEncontrado.mostrarInformacion());
       return avionEncontrado;
     } else {
       document.write(
         `No se encontró un avión con el nombre ${nombreAvion}.<br>`
       );
-      console.log(`No se encontró un avión con el nombre ${nombreAvion}.`);
       return null;
     }
   }

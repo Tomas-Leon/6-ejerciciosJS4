@@ -42,17 +42,11 @@ class Persona {
         this.#profesion
       }.<br>`
     );
-    console.log(
-      `Hola, mi nombre es ${this.#nombre}, tengo ${this.#edad} años y soy ${
-        this.#profesion
-      }.`
-    );
   }
 
   // Método para despedirse
   despedirse() {
     document.write(`Adiós, fue un placer.<br>`);
-    console.log(`Adiós, fue un placer.`);
   }
 }
 
