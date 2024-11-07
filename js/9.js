@@ -8,7 +8,6 @@ class Animal {
   // Método que puede ser sobrescrito por las clases hijas
   emitirSonido() {
     document.write(`${this.nombre} emite un sonido.<br>`);
-    console.log(`${this.nombre} emite un sonido.`);
   }
 }
 
@@ -17,7 +16,6 @@ class Perro extends Animal {
   // Sobrescribimos el método emitirSonido
   emitirSonido() {
     document.write(`${this.nombre} dice: ¡Guau!<br>`);
-    console.log(`${this.nombre} dice: ¡Guau!`);
   }
 }
 
@@ -26,14 +24,13 @@ class Gato extends Animal {
   // Sobrescribimos el método emitirSonido
   emitirSonido() {
     document.write(`${this.nombre} dice: ¡Miau!<br>`);
-    console.log(`${this.nombre} dice: ¡Miau!`);
   }
 }
 
 // Crear instancias de Perro y Gato
-const miPerro = new Perro("Fido", 4);
-const miGato = new Gato("Michi", 2);
+const miPerro = new Perro("Manzo", 10);
+const miGato = new Gato("Michi", 4);
 
 // Llamar a los métodos emitirSonido
-miPerro.emitirSonido(); // Fido dice: ¡Guau!
-miGato.emitirSonido(); // Michi dice: ¡Miau!
+miPerro.emitirSonido(); 
+miGato.emitirSonido(); 
